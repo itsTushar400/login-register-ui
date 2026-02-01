@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register | Code With Tushar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" id="container">
+
+    <!-- SIGN UP -->
+    <div class="form-container sign-up">
+        <form>
+            <h1>Create Account</h1>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-google'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <span>Register with Email</span>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+
+            <div class="password-box">
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <i class='bx bx-hide eye' data-target="signupPassword"></i>
+            </div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <!-- SIGN IN -->
+    <div class="form-container sign-in">
+        <form>
+            <h1>Sign In</h1>
+
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-google'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <span>Login with Email & Password</span>
+            <input type="email" placeholder="Email" required>
+
+            <div class="password-box">
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <i class='bx bx-hide eye' data-target="loginPassword"></i>
+            </div>
+
+            <a href="#">Forgot Password?</a>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+
+    <!-- TOGGLE -->
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>Login with your personal info</p>
+                <button class="hidden" id="login">Sign In</button>
+            </div>
+
+            <div class="toggle-panel toggle-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your details to register</p>
+                <button class="hidden" id="register">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Code With Tushar. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
